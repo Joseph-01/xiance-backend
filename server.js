@@ -18,7 +18,5 @@ app.use("/user", userRoute)
 app.use("/balance", balanceRoute)
 
 dbConnection.startConnection(
-  app.listen(port, () => {
-    console.log(`working`)
-  })
+  app.listen(port)
 )
